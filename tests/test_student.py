@@ -72,4 +72,4 @@ def test_pass_nonlist_for_courses_parameter():
 
     ada = Student("Ada Lovelace", "sophomore", "mathematics")
     
-    with pytest.raises(AttributeError): ada.courses.append("Gym")
+    with pytest.raises(AttributeError): ada.courses.add_class("Gym")
